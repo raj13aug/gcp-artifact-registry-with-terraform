@@ -1,12 +1,12 @@
 resource "google_project_service" "enable_artifact_registry_api" {
   service = "artifactregistry.googleapis.com"
-  project = "<YOUR_PROJECT_ID>"
+  project = var.project_id
 }
 
 
 resource "google_artifact_registry_repository" "cache" {
   provider = google-beta
-  project  = module.google-cloud-project.project.project_id
+  project  = var.project_id
 
   location      = local.region
   repository_id = "my-repo"

@@ -1,6 +1,6 @@
 locals {
 
-  region            = "us-east1"
-  availability_zone = "us-east1-d"
+  region            = "us-central1"
+  availability_zone = "us-central1-a"
 
 }
