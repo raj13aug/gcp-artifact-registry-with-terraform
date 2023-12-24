@@ -21,7 +21,7 @@ resource "google_artifact_registry_repository" "cache" {
   format = "DOCKER"
 
   cleanup_policies {
-    id     = "keep-latest-release"
+    id     = "keep-prod-release"
     action = "KEEP"
 
     condition {
