@@ -45,7 +45,7 @@ resource "google_artifact_registry_repository" "cache" {
 
     condition {
       tag_state  = "UNTAGGED"
-      older_than = "${14 * 24 * 60 * 60}s"
+      older_than = "2592000s"
     }
   }
 
