@@ -26,7 +26,7 @@ resource "google_artifact_registry_repository" "cache" {
 
     condition {
       tag_state    = "TAGGED"
-      tag_prefixes = ["latest"]
+      tag_prefixes = ["prod"]
     }
   }
 
